@@ -1,3 +1,55 @@
-h1 {
-   color: red;
+/* Variables */
+$blue: #2C3E50;
+$teal: #18BC9C;
+$font-family: 'Montserrat', sans-serif;
+$bold-font-weight: 700;
+$borderTest: 1px solid yellow;
+
+/* Mixins */
+@mixin vertical-align($position: relative) {
+   position: $position;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body {
+   font-family: $font-family;
+   letter-spacing: 1px;
+}
+
+.navbar {
+   position: fixed;
+   height: 10%;
+   width: 100%;
+   background-color: $blue;
+   color: #FFF;
+   font-weight: $bold-font-weight;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.navbar-brand {
+   @include vertical-align();
+   font-size: 32px;
+   width: 50%;
+   float: left;
+}
+
+.navbar-links {
+   @include vertical-align();
+   font-size: 15px;
+   width: 50%;
+   float: left;
+   list-style-type: none;
+   li {
+      display: inline;
+      padding-right: 20px;
+   }
 }
