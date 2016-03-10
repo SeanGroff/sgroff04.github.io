@@ -9,7 +9,7 @@ const jade = require('gulp-jade');
 gulp.task('jade', () => {
    return gulp.src('src/templates/**/*.jade')
       .pipe(jade())
-      .pipe(gulp.dest('dist'))
+      .pipe(gulp.dest('./'))
       .pipe(browserSync.reload({
          stream: true
       }));
@@ -33,7 +33,7 @@ gulp.task('babel', () => {
 gulp.task('browserSync', () => {
    browserSync.init({
       server: {
-         baseDir: 'dist'
+         baseDir: './'
       },
    });
 });
