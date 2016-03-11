@@ -5,12 +5,18 @@ html
       link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css')
       link(href='dist/css/styles.css' rel='stylesheet')
    body
-      nav.navbar
-         .navbar-brand sean groff
-         ul.navbar-links
-            li portfolio
-            li about
-            li contact
+      .container
+         nav.navbar
+            .navbar-brand
+               a.link(href='#page-top') sean groff
+            ul.navbar-links
+               li 
+               a.link(href='#portfolio') portfolio
+               li
+               a.link(href='#about') about
+               li
+               a.link(href='#contact') contact
+         section.intro-section
       script(src='dist/js/index.js')
       
       
