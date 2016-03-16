@@ -1,22 +1,5 @@
 /* Variables */
-/* Mixins */
-* {
-  box-sizing: border-box;
-  margin: 0; }
-
-body {
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px; }
-
-.link {
-  color: #FFF;
-  text-decoration: none; }
-  .link:hover {
-    color: #18BC9C; }
-
-.container {
-  display: flex; }
-
+/* Variables */
 .navbar {
   display: flex;
   align-items: center;
@@ -41,8 +24,51 @@ body {
     display: inline;
     padding-right: 20px; }
 
+/* Variables */
 .intro-section {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 774px;
   min-width: 100%;
   background-color: #18BC9C; }
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.intro-item {
+  flex: 1;
+  color: #FFF; }
+
+.img-wrapper {
+  padding: 25px; }
+
+.intro-title {
+  font-size: 62px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.occupation {
+  font-size: 28px;
+  font-weight: 300; }
+
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.43; }
+
+.link {
+  color: #FFF;
+  text-decoration: none; }
+  .link:hover {
+    color: #18BC9C; }
+
+.container {
+  display: flex; }

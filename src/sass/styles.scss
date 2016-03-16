@@ -1,14 +1,6 @@
-/* Variables */
-$t-primary-color: #FFF;
-$t-secondary-color: #18BC9C;
-$t-primary-bg-color: #18BC9C;
-$t-secondary-bg-color: #2C3E50;
-$font-family: 'Montserrat', sans-serif;
-$bold-font-weight: 700;
-$border-test: 1px solid yellow;
-
-/* Mixins */
-
+@import './partials/globals';
+@import './partials/navbar';
+@import './partials/intro';
 
 * {
    box-sizing: border-box;
@@ -18,6 +10,7 @@ $border-test: 1px solid yellow;
 body {
    font-family: $font-family;
    letter-spacing: 1px;
+   line-height: 1.43;
 }
 
 .link {
@@ -30,39 +23,4 @@ body {
 
 .container {
    display: flex;
-}
-
-.navbar {
-   display: flex;
-   align-items: center;
-   position: fixed;
-   height: 110px;
-   min-width: 100%;
-   background-color: $t-secondary-bg-color;
-   color: #FFF;
-   font-weight: $bold-font-weight;
-   text-align: center;
-   text-transform: uppercase;
-}
-
-.navbar-brand {
-   flex: 1;
-   font-size: 32px;
-}
-
-.navbar-links {
-   flex: 1;
-   font-size: 15px;
-   list-style-type: none;
-   li {
-      display: inline;
-      padding-right: 20px;
-   }
-}
-
-.intro-section {
-   display: flex;
-   height: 774px;
-   min-width: 100%;
-   background-color: $t-primary-bg-color;
 }

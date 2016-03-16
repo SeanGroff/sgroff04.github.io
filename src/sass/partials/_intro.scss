@@ -1,0 +1,37 @@
+@import './partials/_globals';
+
+.intro-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 774px;
+   min-width: 100%;
+   background-color: $t-primary-bg-color;
+}
+
+.intro-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.intro-item {
+   flex: 1;
+   color: $t-primary-color;
+}
+
+.img-wrapper {
+   padding: 25px;
+}
+
+.intro-title {
+   font-size: 62px;
+   font-weight: $bold-font-weight;
+   text-transform: uppercase;
+}
+
+.occupation {
+   font-size: 28px;
+   font-weight: 300;
+}
