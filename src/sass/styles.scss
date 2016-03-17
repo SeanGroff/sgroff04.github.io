@@ -2,6 +2,7 @@
 @import './partials/globals';
 @import './partials/navbar';
 @import './partials/intro';
+@import './partials/portfolio';
 
 * {
    box-sizing: border-box;
@@ -24,4 +25,5 @@ body {
 
 .container {
    display: flex;
+   flex-direction: column;
 }

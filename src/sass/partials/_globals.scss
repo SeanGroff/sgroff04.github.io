@@ -1,8 +1,46 @@
 /* Variables */
 $t-primary-color: #FFF;
 $t-secondary-color: #18BC9C;
+$t-dark-color: #2C3E50;
 $t-primary-bg-color: #18BC9C;
 $t-secondary-bg-color: #2C3E50;
 $font-family: 'Montserrat', sans-serif;
 $bold-font-weight: 700;
 $border-test: 1px solid yellow;
+
+// Common
+h2 {
+   font-family: $font-family;
+   text-transform: uppercase;
+   font-size: 46px;
+}
+
+.t-primary-color {
+   color: $t-primary-color;
+}
+.t-dark-color {
+   color: $t-dark-color;
+}
+
+.star-container {
+   display: flex;
+   flex-direction: row;
+
+}
+
+.line {
+   border-top: 5px solid $t-primary-color;
+   min-width: 100px;
+   margin: 0 10px;
+}
+
+.line-dark {
+   border-top: 5px solid $t-dark-color;
+   min-width: 100px;
+   margin: 0 10px;
+}
+
+
+.fa-star {
+   margin-top: -14px;
+}

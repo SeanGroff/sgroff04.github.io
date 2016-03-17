@@ -1,0 +1,33 @@
+@import './partials/_globals';
+
+.portfolio-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 774px;
+   min-width: 100%;
+}
+
+.portfolio-header {
+   margin-bottom: 20px;
+}
+
+.portfolio-projects-container {
+   padding: 0;
+   margin: 20px 0 0 0;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   min-width: 60%;
+   border: $border-test;
+}
+
+.test-box {
+   background-color: tomato;
+   flex-basis: 31%;
+   margin-bottom: 22px;
+   margin-right: 15px;
+
+}
