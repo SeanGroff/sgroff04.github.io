@@ -29,9 +29,27 @@
    font-size: 62px;
    font-weight: $bold-font-weight;
    text-transform: uppercase;
+   margin-bottom: 25px;
+}
+
+.star-container {
+   display: flex;
+   flex-direction: row;
+
+}
+
+.star {
+   border-top: 5px solid white;
+   min-width: 100px;
+   margin: 0 10px;
+}
+
+.fa-star {
+   margin-top: -14px;
+   color: $t-primary-color;
 }
 
 .occupation {
    font-size: 28px;
-   font-weight: 300;
+   margin-top: 15px;
 }
