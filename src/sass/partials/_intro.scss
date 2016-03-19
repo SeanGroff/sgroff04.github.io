@@ -21,8 +21,19 @@
    color: $t-primary-color;
 }
 
-.img-wrapper {
+.profile-img-wrapper {
+   width: 320px;
+   height: auto;
+   overflow: hidden;
+   text-align: center;
+
    padding: 25px;
+   img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+      border-radius: 50%;
+   }
 }
 
 .intro-title {
