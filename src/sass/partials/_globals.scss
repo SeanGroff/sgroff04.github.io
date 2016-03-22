@@ -4,22 +4,53 @@ $t-secondary-color: #18BC9C;
 $t-dark-color: #2C3E50;
 $t-primary-bg-color: #18BC9C;
 $t-secondary-bg-color: #2C3E50;
-$font-family: 'Montserrat', sans-serif;
+$t-secodary-bg-color-dark: #233140;
+$font-family: 'Lato', sans-serif;
+$font-family-heading: 'Montserrat', sans-serif;
 $bold-font-weight: 700;
 $border-test: 1px solid yellow;
 
 // Common
+.border-test {
+   border: $border-test;
+}
+
 h2 {
-   font-family: $font-family;
+   font-family: $font-family-heading;
+   font-weight: $bold-font-weight;
    text-transform: uppercase;
    font-size: 46px;
+}
+
+h3 {
+   font-family: $font-family-heading;
+   font-weight: $bold-font-weight;
+   text-transform: uppercase;
+   font-size: 26px;
 }
 
 .t-primary-color {
    color: $t-primary-color;
 }
+
+.t-secondary-color {
+   color: $t-secondary-color;
+}
+
 .t-dark-color {
    color: $t-dark-color;
+}
+
+.t-primary-bg-color {
+   background-color: $t-primary-bg-color;
+}
+
+.t-secondary-bg-color {
+   background-color: $t-secondary-bg-color;
+}
+
+.t-secodary-bg-color-dark {
+   background-color: $t-secodary-bg-color-dark;
 }
 
 .star-container {
