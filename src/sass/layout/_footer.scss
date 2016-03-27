@@ -24,6 +24,30 @@
       p {
          margin-bottom: 10px;
       }
+      ul {
+         height: 67px;
+         li {
+            display: inline-block;
+            padding: 0 5px;
+            a:hover {
+               background-color: $t-primary-color;
+               i {
+                  color: $t-secondary-color;
+               }
+            }
+         }
+      }
+      .btn-social {
+         border-radius: 50%;
+         border: 2px solid $t-primary-color;
+         text-align: center;
+         font-size: 20px;
+         line-height: 80px;
+         padding: 10px;
+         i {
+            font-size: 20px;
+         }
+      }
    }
 }
 
