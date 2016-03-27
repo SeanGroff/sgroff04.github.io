@@ -1,59 +1,9 @@
 @import '../../bower_components/font-awesome/scss/font-awesome.scss';
-@import './partials/globals';
-@import './partials/navbar';
-@import './partials/intro';
-@import './partials/portfolio';
-@import './partials/about';
-@import './partials/skills';
-@import './partials/footer';
-
-* {
-   box-sizing: border-box;
-   margin: 0;
-}
-
-body {
-   font-family: $font-family;
-   letter-spacing: 1px;
-   line-height: 1.43;
-}
-
-.link {
-   color: $t-primary-color;
-   text-decoration: none;
-   &:hover {
-      color: $t-secondary-color;
-   }
-}
-
-.container {
-   display: flex;
-   flex-direction: column;
-}
-
-.col-33 {
-   flex-basis: 33%;
-   border: 1px solid orange;
-}
-
-.section-header {
-   font-family: $font-family-heading;
-   margin-bottom: 20px;
-}
-
-.section-container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 774px;
-   min-width: 100%;
-}
-
-.center-text {
-   text-align: center;
-}
-
-.uppercase-text {
-   text-transform: uppercase;
-}
+@import './base/init';
+@import './base/common';
+@import './module/about';
+@import './layout/footer';
+@import './module/intro';
+@import './layout/navbar';
+@import './module/portfolio';
+@import './module/skills';

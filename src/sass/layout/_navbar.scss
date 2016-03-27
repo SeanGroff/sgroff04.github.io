@@ -1,0 +1,39 @@
+@import './base/init';
+@import './base/common';
+
+.navbar {
+   display: flex;
+   align-items: center;
+   position: fixed;
+   height: 110px;
+   min-width: 100%;
+   background-color: $t-secondary-bg-color;
+   color: #FFF;
+   font-family: $ff-heading;
+   font-weight: $bold-font-weight;
+   text-align: center;
+   text-transform: uppercase;
+   @media only screen and (max-width: 600px) {
+      height: 60px;
+      position: fixed;
+   }
+   .navbar-brand {
+      flex: 1;
+      font-size: 32px;
+      @media only screen and (max-width: 600px) {
+         font-size: 20px;
+      }
+   }
+   .navbar-links {
+      flex: 1;
+      font-size: 15px;
+      list-style-type: none;
+      li {
+         display: inline;
+         padding-right: 20px;
+      }
+      @media only screen and (max-width: 600px) {
+         display: none;
+      }
+   }
+}

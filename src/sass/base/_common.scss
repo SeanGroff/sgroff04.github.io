@@ -1,0 +1,90 @@
+@import './init';
+
+// Common
+.border-test {
+   border: $border-test;
+}
+
+.t-primary-color {
+   color: $t-primary-color;
+}
+
+.t-secondary-color {
+   color: $t-secondary-color;
+}
+
+.t-dark-color {
+   color: $t-dark-color;
+}
+
+.t-primary-bg-color {
+   background-color: $t-primary-bg-color;
+}
+
+.t-secondary-bg-color {
+   background-color: $t-secondary-bg-color;
+}
+
+.t-secodary-bg-color-dark {
+   background-color: $t-secodary-bg-color-dark;
+}
+
+.star-container {
+   display: flex;
+   flex-direction: row;
+}
+
+.line {
+   border-top: 5px solid $t-primary-color;
+   min-width: 100px;
+   margin: 0 10px;
+}
+
+.line-dark {
+   border-top: 5px solid $t-dark-color;
+   min-width: 100px;
+   margin: 0 10px;
+}
+
+.fa-star {
+   margin-top: -14px;
+}
+
+.link {
+   color: $t-primary-color;
+   text-decoration: none;
+   &:hover {
+      color: $t-secondary-color;
+   }
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+}
+
+.col-33 {
+   flex-basis: 33%;
+}
+
+.section-header {
+   font-family: $ff-heading;
+   margin-bottom: 20px;
+}
+
+.section-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 774px;
+   min-width: 100%;
+}
+
+.center-text {
+   text-align: center;
+}
+
+.uppercase-text {
+   text-transform: uppercase;
+}

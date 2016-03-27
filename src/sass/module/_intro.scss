@@ -1,0 +1,44 @@
+@import './base/init';
+@import './base/common';
+
+.intro-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 774px;
+   min-width: 100%;
+   background-color: $t-primary-bg-color;
+   .intro-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .intro-item {
+      flex: 1;
+      color: $t-primary-color;
+   }
+   .profile-img-wrapper {
+      width: 320px;
+      height: auto;
+      overflow: hidden;
+      text-align: center;
+      padding: 25px;
+      img {
+         max-width: 100%;
+         max-height: 100%;
+         vertical-align: middle;
+         border-radius: 50%;
+      }
+   }
+   h1 {
+      margin-bottom: 25px;
+   }
+   .occupation {
+      font-size: 28px;
+      margin-top: 15px;
+      @media only screen and (max-width: 600px) {
+         font-size: 24px;
+      }
+   }
+}
