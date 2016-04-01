@@ -68,8 +68,14 @@
    flex-direction: column;
 }
 
+.col-25 {
+   flex-basis: 25%;
+   padding: 0 15px;
+}
+
 .col-33 {
    flex-basis: 33%;
+   padding: 0 15px;
 }
 
 .section-header {
@@ -92,4 +98,18 @@
 
 .uppercase-text {
    text-transform: uppercase;
+}
+
+.flex-row-center {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.flex-row-baseline {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: baseline;
 }

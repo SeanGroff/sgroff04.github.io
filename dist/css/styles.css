@@ -2212,8 +2212,13 @@ h3 {
   display: flex;
   flex-direction: column; }
 
+.col-25 {
+  flex-basis: 25%;
+  padding: 0 15px; }
+
 .col-33 {
-  flex-basis: 33%; }
+  flex-basis: 33%;
+  padding: 0 15px; }
 
 .section-header {
   font-family: "Montserrat", sans-serif;
@@ -2232,6 +2237,18 @@ h3 {
 
 .uppercase-text {
   text-transform: uppercase; }
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-baseline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline; }
 
 /* Variables */
 * {
@@ -2367,8 +2384,13 @@ h3 {
   display: flex;
   flex-direction: column; }
 
+.col-25 {
+  flex-basis: 25%;
+  padding: 0 15px; }
+
 .col-33 {
-  flex-basis: 33%; }
+  flex-basis: 33%;
+  padding: 0 15px; }
 
 .section-header {
   font-family: "Montserrat", sans-serif;
@@ -2387,6 +2409,24 @@ h3 {
 
 .uppercase-text {
   text-transform: uppercase; }
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-baseline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline; }
+
+.section-container .about-me {
+  margin-top: 20px;
+  max-width: 1200px; }
+  .section-container .about-me p {
+    font-size: 19px; }
 
 /* Variables */
 * {
@@ -2522,8 +2562,13 @@ h3 {
   display: flex;
   flex-direction: column; }
 
+.col-25 {
+  flex-basis: 25%;
+  padding: 0 15px; }
+
 .col-33 {
-  flex-basis: 33%; }
+  flex-basis: 33%;
+  padding: 0 15px; }
 
 .section-header {
   font-family: "Montserrat", sans-serif;
@@ -2542,6 +2587,18 @@ h3 {
 
 .uppercase-text {
   text-transform: uppercase; }
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-baseline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline; }
 
 .footer-container {
   display: flex;
@@ -2725,8 +2782,13 @@ h3 {
   display: flex;
   flex-direction: column; }
 
+.col-25 {
+  flex-basis: 25%;
+  padding: 0 15px; }
+
 .col-33 {
-  flex-basis: 33%; }
+  flex-basis: 33%;
+  padding: 0 15px; }
 
 .section-header {
   font-family: "Montserrat", sans-serif;
@@ -2745,6 +2807,18 @@ h3 {
 
 .uppercase-text {
   text-transform: uppercase; }
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-baseline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline; }
 
 .intro-section {
   display: flex;
@@ -2915,8 +2989,13 @@ h3 {
   display: flex;
   flex-direction: column; }
 
+.col-25 {
+  flex-basis: 25%;
+  padding: 0 15px; }
+
 .col-33 {
-  flex-basis: 33%; }
+  flex-basis: 33%;
+  padding: 0 15px; }
 
 .section-header {
   font-family: "Montserrat", sans-serif;
@@ -2935,6 +3014,18 @@ h3 {
 
 .uppercase-text {
   text-transform: uppercase; }
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-baseline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline; }
 
 .navbar {
   display: flex;
@@ -3103,8 +3194,13 @@ h3 {
   display: flex;
   flex-direction: column; }
 
+.col-25 {
+  flex-basis: 25%;
+  padding: 0 15px; }
+
 .col-33 {
-  flex-basis: 33%; }
+  flex-basis: 33%;
+  padding: 0 15px; }
 
 .section-header {
   font-family: "Montserrat", sans-serif;
@@ -3123,6 +3219,18 @@ h3 {
 
 .uppercase-text {
   text-transform: uppercase; }
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-baseline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline; }
 
 #portfolio .portfolio-section {
   display: flex;
@@ -3283,8 +3391,13 @@ h3 {
   display: flex;
   flex-direction: column; }
 
+.col-25 {
+  flex-basis: 25%;
+  padding: 0 15px; }
+
 .col-33 {
-  flex-basis: 33%; }
+  flex-basis: 33%;
+  padding: 0 15px; }
 
 .section-header {
   font-family: "Montserrat", sans-serif;
@@ -3303,3 +3416,15 @@ h3 {
 
 .uppercase-text {
   text-transform: uppercase; }
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-baseline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline; }
