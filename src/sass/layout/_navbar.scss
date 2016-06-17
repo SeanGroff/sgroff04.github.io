@@ -2,38 +2,106 @@
 @import './base/common';
 
 .navbar {
-   display: flex;
-   align-items: center;
-   position: fixed;
-   height: 110px;
-   min-width: 100%;
-   background-color: $t-secondary-bg-color;
-   color: #FFF;
-   font-family: $ff-heading;
-   font-weight: $bold-font-weight;
-   text-align: center;
-   text-transform: uppercase;
-   @media only screen and (max-width: 600px) {
-      height: 60px;
-      position: fixed;
-   }
-   .navbar-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 60px;
+  min-width: 100%;
+  background-color: $t-secondary-bg-color;
+  color: #FFF;
+  font-family: $ff-heading;
+  font-weight: $bold-font-weight;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .navbar-brand {
+    font-size: 20px;
+
+    @media only screen and (min-width: $large-up) {
       flex: 1;
       font-size: 32px;
-      @media only screen and (max-width: 600px) {
-         font-size: 20px;
+    }
+  }
+
+  .navbar-links {
+    display: none;
+    flex: 1;
+    font-size: 15px;
+    list-style-type: none;
+
+    li {
+     display: inline;
+     padding-right: 20px;
+    }
+
+    @media only screen and (min-width: $large-up) {
+      display: block;
+    }
+  }
+
+  .hamburger {
+    display: block;
+    height: 21px;
+    width: 25px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 0;
+      background-color: transparent;
+      width: 25px;
+      height: 21px;
+    }
+
+    .hamburger-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      background-color: $t-primary-color;
+      width: 100%;
+      height: 3px;
+
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $t-primary-color;
+        width: 100%;
+        height: 3px;
+        transform: translateY(-7px);
       }
-   }
-   .navbar-links {
-      flex: 1;
-      font-size: 15px;
-      list-style-type: none;
-      li {
-         display: inline;
-         padding-right: 20px;
+
+      &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $t-primary-color;
+        width: 100%;
+        height: 3px;
+        transform: translateY(7px);
       }
-      @media only screen and (max-width: 600px) {
-         display: none;
-      }
-   }
+    }
+
+    @media (min-width: $large-up) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $large-up) {
+    height: 110px;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
